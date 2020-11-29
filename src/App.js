@@ -1,13 +1,22 @@
 import './App.css';
 import React from "react";
-import SortableList from "./SortableList";
+import BirthPlanPreferencesGrid from "./components/birthPlanPreferencesGrid";
+import AvailableBirthPlanPreferences from "./components/AvailableBirthPlanPreferences";
+import {Container, Row, Col} from "react-bootstrap";
 
 function App() {
-  return (
-    <div className="App">
-      <SortableList />
-    </div>
-  );
+    return (
+        <Container fluid>
+            <Row>
+                <Col lg={8}>
+                    <BirthPlanPreferencesGrid/>
+                </Col>
+                <Col lg={4}>
+                    <AvailableBirthPlanPreferences/>
+                </Col>
+            </Row>
+        </Container>
+    );
 }
 
 export default App;
