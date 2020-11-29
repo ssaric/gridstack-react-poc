@@ -2,7 +2,6 @@ import React from "react";
 import '../birthPlanPreference/style.css';
 import {mockPreferences} from "../../mockData";
 import BirthPlanPreference from "../birthPlanPreference";
-import {Card} from "react-bootstrap";
 
 
 const AvailableBirthPlanPreferences = props => {

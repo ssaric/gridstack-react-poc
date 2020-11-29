@@ -16,7 +16,7 @@ function generateLayout(items) {
     }));
 }
 
-const BirthPlanPreferencesGrid = props => {
+const BirthPlanPreferencesGrid = () => {
     const [layout, setLayout] = useState({});
     const [birthPreferences, setBirthPreferences] = useState([]);
     const onDrop = (layout, item, e) => {
@@ -45,7 +45,7 @@ const BirthPlanPreferencesGrid = props => {
     }, [setLayout, birthPreferences])
 
     return (<ResponsiveReactGridLayout
-        className="layout"
+        className="layout birth-plan"
         style={{height: '100%', overflow: 'auto',}}
         layouts={layout}
         onDrop={onDrop}
