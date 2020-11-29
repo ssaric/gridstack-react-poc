@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/gridstack-react-poc/static/css/main.634c4810.chunk.css",
-    "main.js": "/gridstack-react-poc/static/js/main.fd4bd6d6.chunk.js",
-    "main.js.map": "/gridstack-react-poc/static/js/main.fd4bd6d6.chunk.js.map",
+    "main.css": "/gridstack-react-poc/static/css/main.bbd76dd9.chunk.css",
+    "main.js": "/gridstack-react-poc/static/js/main.c0d79dce.chunk.js",
+    "main.js.map": "/gridstack-react-poc/static/js/main.c0d79dce.chunk.js.map",
     "runtime-main.js": "/gridstack-react-poc/static/js/runtime-main.15d2a6d7.js",
     "runtime-main.js.map": "/gridstack-react-poc/static/js/runtime-main.15d2a6d7.js.map",
     "static/css/2.830992d1.chunk.css": "/gridstack-react-poc/static/css/2.830992d1.chunk.css",
-    "static/js/2.31c34966.chunk.js": "/gridstack-react-poc/static/js/2.31c34966.chunk.js",
-    "static/js/2.31c34966.chunk.js.map": "/gridstack-react-poc/static/js/2.31c34966.chunk.js.map",
+    "static/js/2.9dae91cd.chunk.js": "/gridstack-react-poc/static/js/2.9dae91cd.chunk.js",
+    "static/js/2.9dae91cd.chunk.js.map": "/gridstack-react-poc/static/js/2.9dae91cd.chunk.js.map",
     "index.html": "/gridstack-react-poc/index.html",
     "static/css/2.830992d1.chunk.css.map": "/gridstack-react-poc/static/css/2.830992d1.chunk.css.map",
-    "static/css/main.634c4810.chunk.css.map": "/gridstack-react-poc/static/css/main.634c4810.chunk.css.map",
-    "static/js/2.31c34966.chunk.js.LICENSE.txt": "/gridstack-react-poc/static/js/2.31c34966.chunk.js.LICENSE.txt",
+    "static/css/main.bbd76dd9.chunk.css.map": "/gridstack-react-poc/static/css/main.bbd76dd9.chunk.css.map",
+    "static/js/2.9dae91cd.chunk.js.LICENSE.txt": "/gridstack-react-poc/static/js/2.9dae91cd.chunk.js.LICENSE.txt",
     "static/media/AskMeFirst.704d6491.png": "/gridstack-react-poc/static/media/AskMeFirst.704d6491.png",
     "static/media/DaddyCatchBaby.b5c7c245.png": "/gridstack-react-poc/static/media/DaddyCatchBaby.b5c7c245.png",
     "static/media/DaddyCutCord.5a97a808.png": "/gridstack-react-poc/static/media/DaddyCutCord.5a97a808.png",
@@ -24,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.15d2a6d7.js",
     "static/css/2.830992d1.chunk.css",
-    "static/js/2.31c34966.chunk.js",
-    "static/css/main.634c4810.chunk.css",
-    "static/js/main.fd4bd6d6.chunk.js"
+    "static/js/2.9dae91cd.chunk.js",
+    "static/css/main.bbd76dd9.chunk.css",
+    "static/js/main.c0d79dce.chunk.js"
   ]
 }
