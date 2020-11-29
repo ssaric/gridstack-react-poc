@@ -1,7 +1,7 @@
 import './App.css';
 import React from "react";
 import BirthPlanPreferencesGrid from "./components/birthPlanPreferencesGrid";
-import AvailableBirthPlanPreferences from "./components/AvailableBirthPlanPreferences";
+import AvailableBirthPlanPreferences from "./components/availableBirthPlanPreferences";
 import {Container, Row, Col} from "react-bootstrap";
 
 function App() {

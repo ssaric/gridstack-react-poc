@@ -36,7 +36,13 @@ const BirthPlanPreferencesGrid = props => {
     }
 
     useEffect(() => {
-        setLayout({sm: generateLayout(birthPreferences)});
+        setLayout({
+            lg: generateLayout(birthPreferences),
+            md: generateLayout(birthPreferences),
+            sm: generateLayout(birthPreferences),
+            xs: generateLayout(birthPreferences),
+            xxs: generateLayout(birthPreferences),
+        });
     }, [setLayout, birthPreferences])
 
     return (<ResponsiveReactGridLayout
@@ -44,7 +50,7 @@ const BirthPlanPreferencesGrid = props => {
         layouts={layout}
         onDrop={onDrop}
         rowHeight={30}
-        cols={{ lg: 12, md: 12, sm: 12, xs: 12, xxs: 2 }}
+        cols={{ lg: 12, md: 12, sm: 12, xs: 12, xxs: 12 }}
         isDroppable={true}
         isResizable={false}>
         {birthPreferences.map((gi, i) => {
