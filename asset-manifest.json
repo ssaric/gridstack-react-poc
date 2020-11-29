@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/gridstack-react-poc/static/css/main.634c4810.chunk.css",
-    "main.js": "/gridstack-react-poc/static/js/main.64ff38a0.chunk.js",
-    "main.js.map": "/gridstack-react-poc/static/js/main.64ff38a0.chunk.js.map",
+    "main.js": "/gridstack-react-poc/static/js/main.fd4bd6d6.chunk.js",
+    "main.js.map": "/gridstack-react-poc/static/js/main.fd4bd6d6.chunk.js.map",
     "runtime-main.js": "/gridstack-react-poc/static/js/runtime-main.15d2a6d7.js",
     "runtime-main.js.map": "/gridstack-react-poc/static/js/runtime-main.15d2a6d7.js.map",
     "static/css/2.830992d1.chunk.css": "/gridstack-react-poc/static/css/2.830992d1.chunk.css",
@@ -26,6 +26,6 @@
     "static/css/2.830992d1.chunk.css",
     "static/js/2.31c34966.chunk.js",
     "static/css/main.634c4810.chunk.css",
-    "static/js/main.64ff38a0.chunk.js"
+    "static/js/main.fd4bd6d6.chunk.js"
   ]
 }
