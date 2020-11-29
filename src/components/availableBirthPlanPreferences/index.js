@@ -2,6 +2,7 @@ import React from "react";
 import '../birthPlanPreference/style.css';
 import {mockPreferences} from "../../mockData";
 import BirthPlanPreference from "../birthPlanPreference";
+import {Card} from "react-bootstrap";
 
 
 const AvailableBirthPlanPreferences = props => {
@@ -10,8 +11,13 @@ const AvailableBirthPlanPreferences = props => {
             {mockPreferences.map((gi, i) =>
                 <BirthPlanPreference
                     key={i}
-                    preferenceId={i}
                     {...gi}
+                    draggable={true}
+                    unselectable="on"
+                    onDragStart={e => {
+                        e.dataTransfer.setData("text/plain", "");
+                        e.dataTransfer.setData("preference-id", i);
+                    }}
                 />)}
         </div>
     )

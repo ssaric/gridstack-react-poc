@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react";
-import { Responsive, WidthProvider } from "react-grid-layout";
+import {Responsive, WidthProvider} from "react-grid-layout";
 import './style.css';
-import {mockPlan} from "../../mockData";
 import {mockPreferences} from "../../mockData";
+import BirthPlanPreference from "../birthPlanPreference";
+
 const ResponsiveReactGridLayout = WidthProvider(Responsive);
-const gridItems = mockPlan.layoutItems;
 
 function generateLayout(items) {
     return items.map(gi => ({
@@ -18,7 +18,7 @@ function generateLayout(items) {
 
 const BirthPlanPreferencesGrid = props => {
     const [layout, setLayout] = useState({});
-    const [birthPreferences, setBirthPreferences] = useState( gridItems);
+    const [birthPreferences, setBirthPreferences] = useState([]);
     const onDrop = (layout, item, e) => {
         const preferenceId = e.dataTransfer.getData('preference-id');
         const preferenceData = mockPreferences[preferenceId];
@@ -29,8 +29,7 @@ const BirthPlanPreferencesGrid = props => {
                 "y": item.y,
                 "width": 5,
                 "height": 4,
-                "imageId": 5,
-                "itemText": preferenceData.title
+                ...preferenceData,
             }
         ])
     }
@@ -47,17 +46,16 @@ const BirthPlanPreferencesGrid = props => {
 
     return (<ResponsiveReactGridLayout
         className="layout"
+        style={{height: '100%', overflow: 'auto',}}
         layouts={layout}
         onDrop={onDrop}
         rowHeight={30}
-        cols={{ lg: 12, md: 12, sm: 12, xs: 12, xxs: 12 }}
+        cols={{lg: 12, md: 12, sm: 12, xs: 12, xxs: 12}}
         isDroppable={true}
         isResizable={false}>
         {birthPreferences.map((gi, i) => {
-            const {itemText, x, y} = gi;
-            return (<div key={`${x}-${y}`} className="card">
-                {itemText}
-            </div>);
+            const {x, y} = gi;
+            return (<BirthPlanPreference key={`${x}-${y}`} {...gi}  />);
         })}
     </ResponsiveReactGridLayout>)
 }
